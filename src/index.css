@@ -1,0 +1,201 @@
+body {
+  background-color: rgb(154, 130, 169);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.sign-container {
+  background-color: rgb(49, 108, 169);
+  border-radius: 10px;
+  padding: 10px 90px;
+  position: relative;
+}
+
+.sign-atm {
+  z-index: 1;
+}
+
+.sign-graffiti {
+  left: 220px;
+  position: absolute;
+  top: 25px;
+  z-index: 3
+}
+
+.machine {
+  background-color: white;
+  border-top: 8px solid rgb(190, 190, 190);
+  padding: 5px 20px 85px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.card-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container li {
+  display: block;
+  height: 21px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+#star {
+  background: url('./assets/creditcard_sprite.png') 0 0;
+  left: 0px;
+  width: 30px;
+}
+
+#pulse {
+  background: url('./assets/creditcard_sprite.png') -30px 0;
+  left: 30px;
+  width: 50px;
+}
+
+#maestro {
+  background: url('./assets/creditcard_sprite.png') -80px 0;
+  left: 75px;
+  width: 50px;
+}
+
+#mastercard {
+  background: url('./assets/creditcard_sprite.png') -130px 0;
+  left: 125px;
+  width: 40px;
+}
+
+#plus {
+  background: url('./assets/creditcard_sprite.png') -170px 0;
+  left: 165px;
+  width: 40px;
+}
+
+#visa {
+  background: url('./assets/creditcard_sprite.png') -210px 0;
+  left: 205px;
+  width: 27px;
+}
+
+#star.disabled {
+  background: url('./assets/creditcard_sprite.png') 0 -21px;
+}
+
+#pulse.disabled {
+  background: url('./assets/creditcard_sprite.png') -30px -21px;
+}
+
+#maestro.disabled {
+  background: url('./assets/creditcard_sprite.png') -80px -21px;
+}
+
+#mastercard.disabled {
+  background: url('./assets/creditcard_sprite.png') -130px -21px;
+}
+
+#plus.disabled {
+  background: url('./assets/creditcard_sprite.png') -170px -21px;
+}
+
+#visa.disabled {
+  background: url('./assets/creditcard_sprite.png') -210px -21px;
+}
+
+.sticker {
+  bottom: 0;
+  left: 20px;
+  position: absolute;
+  z-index: 3
+}
+
+.screen {
+  background-color: rgb(137, 179, 210);
+  border: 5px solid rgb(222, 222, 212);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  height: 225px;
+  justify-content: space-around;
+  margin-top: 8px;
+  width: 275px;
+}
+
+.screen > p {
+  padding: 35px 35px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options p {
+  font-size: 16px;
+}
+
+.options-left {
+  text-align: left;
+}
+
+.options-right {
+  text-align: right;
+}
+
+.spanning {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.interface {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.button-container {
+  align-items: center;
+  color: rgb(155, 155, 155);
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: rgb(193, 193, 193);
+  border-bottom: 3px solid rgb(155, 155, 155);
+  border-radius: 3px;
+  cursor: pointer;
+  height: 25px;
+  outline: 0;
+  width: 45px;
+}
